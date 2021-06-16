@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          Hola
         </p>
         <a
           className="App-link"
@@ -18,6 +19,11 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {/* // <div className ="App" >
+    // <Navbar/>
+    // <Cards/>
+    // </div> */}
     </div>
   );
 }
