@@ -42,8 +42,9 @@ let minAmount = 0;
     <div className="mt-3">
         <button onClick={() => {setCart([...cart, {productData}])}}> {text}</button>
     </div>
-
-    <CardWidget cart={cart}/>
+    
+    {/* capturo la info al dar click a agregar al carrito
+    <CardWidget cart={cart}/> */}
     </>
     )
 }
