@@ -4,7 +4,7 @@ import {getData} from '../utils/const'
 import CardComponent from '../componets/cardsComponents/Card'
 import {ButtonComponent} from '../componets/ButtonComponent'
 import {ItemComponent} from '../componets/buttonCountComponent/ItemCount'
-
+import './style.css'
 
 const HomeContainer = ({greeting}) => {        
 // const product = {id:1, name:'iphone-12', price:1050, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis minima quo repellat'};
@@ -15,7 +15,7 @@ let [productos, setPreductos] = useState([]);
 // Actualizo los estados
 useEffect(() => {
   const waitForData = async () => {
-    let data =  await getData('music');
+    let data =  await getData('tecnologia');
     let aux = data.map(element => {
     return{
       id: element.id,
@@ -39,17 +39,17 @@ if (productos.length > 0){
 
 return (
 <div className ="App">
-  <header className = "container App-header">    
+  <header className = "App-header">    
     <h1 className="text-dark text-center">{greeting}</h1>
-    <div className="row d-flex  border">
-      <div className="">
+    <div className="container ">
+      <div className="row">
         {productos.map(element => {  
           return(
-            <span key={element.id}>
+            // <div key={element.id}>
               <CardComponent productData={element} > 
                 <ItemComponent productData={element} text={'Agregar al Carrito'}/>
               </CardComponent>
-            </span>
+            // </div>
             // <div className="col-12 mb-3 col-md-4 border">
             //     <div className = "card bg-dark  mt-5">
             //       <img src={element.img} alt="" className="tamanoImg"/>

@@ -8,7 +8,7 @@ const CardComponent = ({productData, children}) => {
 
     <>
     
-        <div className="col-12 mb-3 col-md-4 border">
+        <div className="col-12 mb-3 col-md-4 ">
             <div className = "card bg-dark  mt-5">    
                 <img src={productData.img} alt="" className="tamanoImg"/>
                 <div className = "card-body text-center">
