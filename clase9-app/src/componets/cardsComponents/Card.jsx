@@ -2,8 +2,8 @@ import React from 'react';
 import img1 from './assets/iphone12.jpeg';
 import './styls.css'
 import {ButtonComponent} from '../ButtonComponent'
-import {ItemComponent} from '../buttonCountComponent/ItemCount'
-const CardComponent = ({productData, children}) => {
+import {ItemCountComponent} from '../buttonCountComponent/ItemCount'
+const CardItemsComponent = ({productData, children}) => {
     return (
 
     <>
@@ -25,6 +25,6 @@ const CardComponent = ({productData, children}) => {
     )
 }
 
-export default CardComponent
+export default CardItemsComponent
 
 
